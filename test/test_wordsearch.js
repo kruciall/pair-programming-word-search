@@ -17,6 +17,7 @@ describe("#wordSearch()", function() {
       ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
     ], 'FRANK')
 
+    
     assert.isFalse(result);
   });
 
@@ -35,4 +36,23 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'E', 'O', 'N', 'F', 'E', 'L', 'D'],
+      ['Y', 'F', 'U', 'F', 'Q', 'U', 'A', 'L'],
+      ['H', 'M', 'N', 'T', 'E', 'V', 'R', 'G'],
+      ['W', 'H', 'T', 'S', 'Y', 'E', 'R', 'L'],
+      ['B', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['U', 'B', 'Y', 'W', 'A', 'P', 'A', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'COUNTRY')
+
+    assert.isTrue(result);
+  });
+
+
 });
